@@ -1,4 +1,5 @@
 import Card from "../components/Card";
+import Footer from "./../components/Footer";
 
 export default function page() {
   const mockingData = [
@@ -40,13 +41,16 @@ export default function page() {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen items-center">
-      <h1 className="text-3xl my-5">Apartments</h1>
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-2 mx-9">
-        {mockingData.map((object) => (
-          <Card object={object} key={object.id} />
-        ))}
+    <>
+      <div className="flex flex-col min-h-screen items-center">
+        <h1 className="text-3xl my-5">Apartments</h1>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-2 mx-9">
+          {mockingData.map((object) => (
+            <Card object={object} key={object.id} />
+          ))}
+        </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }
