@@ -14,7 +14,7 @@ export default function Card({
 }) {
   return (
     <div className="w-full">
-      <div className="text-[#5B2205] border border-black mx-9 min-h-fit text-center max-w-[200px]">
+      <div className="text-[#5B2205] border border-black mx-auto min-h-fit text-center min-w-[200px] max-w-[300px]">
         {object.image ? (
           <Image
             src={object.image}
