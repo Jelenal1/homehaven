@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { LiaCoinsSolid } from "react-icons/lia";
 
 export default function Card({
@@ -14,25 +15,27 @@ export default function Card({
 }) {
   return (
     <div className="w-full">
-      <div className="text-[#5B2205] border border-black mx-auto min-h-fit text-center min-w-[200px] max-w-[300px]">
-        {object.image ? (
-          <Image
-            src={object.image}
-            width={500}
-            height={500}
-            alt={object.title}
-            className="mx-auto"
-          />
-        ) : null}
+      <Link href={`/apartments/${object.id}`}>
+        <div className="text-[#5B2205] border border-black mx-auto min-h-fit text-center min-w-[200px] max-w-[300px]">
+          {object.image ? (
+            <Image
+              src={object.image}
+              width={500}
+              height={500}
+              alt={object.title}
+              className="mx-auto"
+            />
+          ) : null}
 
-        <h1>{object.title}</h1>
-        <div className="flex items-center justify-center">
-          <span>CHF</span>
-          <LiaCoinsSolid className="text-[#5B2205]" />
-          <h2 className="ml-1">{object.price}</h2>
+          <h1>{object.title}</h1>
+          <div className="flex items-center justify-center">
+            <span>CHF</span>
+            <LiaCoinsSolid className="text-[#5B2205]" />
+            <h2 className="ml-1">{object.price}</h2>
+          </div>
+          <p className="mr-auto break-words">{object.description}</p>
         </div>
-        <p className="mr-auto break-words">{object.description}</p>
-      </div>
+      </Link>
     </div>
   );
 }
