@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { PiHandCoinsFill } from "react-icons/pi";
 
 export default function Card({
   object,
@@ -13,7 +14,7 @@ export default function Card({
 }) {
   return (
     <div className="w-full">
-      <div className="text-[#5B2205] border border-black mx-9 text-center">
+      <div className="text-[#5B2205] border border-black mx-9 min-h-fit text-center">
         {object.image ? (
           <Image
             src={object.image}
@@ -23,9 +24,13 @@ export default function Card({
             className="mx-auto"
           />
         ) : null}
+
         <h1>{object.title}</h1>
-        <h2>{object.price}</h2>
-        <p>{object.description}</p>
+        <div className="flex items-center justify-center">
+          <PiHandCoinsFill />
+          <h2 className="ml-1">{object.price}</h2>
+        </div>
+        <p className="mr-auto break-words">{object.description}</p>
       </div>
     </div>
   );
