@@ -17,8 +17,8 @@ export default function Card({
         {object.image ? (
           <Image
             src={object.image}
-            width={200}
-            height={200}
+            width={500}
+            height={500}
             alt={object.title}
             className="mx-auto"
           />

@@ -13,7 +13,7 @@ export default function page() {
 
   return (
     <div className="flex flex-col min-h-screen items-center">
-      <h1>Apartments</h1>
+      <h1 className="text-3xl my-5">Apartments</h1>
       <Card object={mockingData[0]} />
     </div>
   );
