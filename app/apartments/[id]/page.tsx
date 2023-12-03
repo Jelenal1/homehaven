@@ -14,9 +14,9 @@ export default function page({ params }: { params: { id: string } }) {
   return (
     <div className="flex flex-col min-h-screen items-center text-[#5B2205]">
       <h1 className="text-3xl my-5">{object.title}</h1>
-      {object.image ? (
+      {object.images ? (
         <Image
-          src={object.image}
+          src={object.images[0]}
           width={500}
           height={500}
           alt={object.title}

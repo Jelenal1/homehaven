@@ -10,16 +10,16 @@ export default function Card({
     title: string;
     description: string;
     price: number | null | undefined;
-    image: string | null | undefined;
+    images: string[] | null | undefined;
   };
 }) {
   return (
     <div className="w-full">
       <Link href={`/apartments/${object.id}`}>
         <div className="text-[#5B2205] border border-black mx-auto min-h-fit text-center min-w-[200px] max-w-[300px]">
-          {object.image ? (
+          {object.images ? (
             <Image
-              src={object.image}
+              src={object.images[0]}
               width={500}
               height={500}
               alt={object.title}

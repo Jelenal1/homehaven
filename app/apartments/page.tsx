@@ -7,35 +7,14 @@ export const mockingData = [
     title: "Apartment 1",
     description: "This is an apartment",
     price: 100,
-    image: "/Homehaven.png",
+    images: ["/apartment_clean_light1.png", "/apartment_clean_light2.png"],
   },
   {
     id: 2,
     title: "Apartment 2",
     description: "This is an apartment",
     price: 100,
-    image: "/Homehaven.png",
-  },
-  {
-    id: 3,
-    title: "Apartment 3",
-    description: "This is an apartment",
-    price: 100,
-    image: "/Homehaven.png",
-  },
-  {
-    id: 4,
-    title: "Apartment 4",
-    description: "This is an apartment",
-    price: 100,
-    image: "/Homehaven.png",
-  },
-  {
-    id: 5,
-    title: "Apartment 5",
-    description: "This is an apartment",
-    price: 100,
-    image: "/Homehaven.png",
+    images: ["/apartment_rough_light1.png", "/apartment_rough_light2.png"],
   },
 ];
 
