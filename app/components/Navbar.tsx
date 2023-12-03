@@ -25,7 +25,7 @@ export default function Navbar() {
           href={"/"}
           className="ml-20 text-[#5B2205] text-xl hover:text-[#5b220596] mt-1 hover:mt-0"
         >
-          Appartments
+          Apartments
         </Link>
         <Link
           href={"/"}
