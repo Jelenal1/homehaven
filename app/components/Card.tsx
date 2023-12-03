@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { PiHandCoinsFill } from "react-icons/pi";
+import { LiaCoinsSolid } from "react-icons/lia";
 
 export default function Card({
   object,
@@ -27,7 +27,8 @@ export default function Card({
 
         <h1>{object.title}</h1>
         <div className="flex items-center justify-center">
-          <PiHandCoinsFill />
+          <span>CHF</span>
+          <LiaCoinsSolid className="text-[#5B2205]" />
           <h2 className="ml-1">{object.price}</h2>
         </div>
         <p className="mr-auto break-words">{object.description}</p>
