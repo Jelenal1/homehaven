@@ -22,25 +22,25 @@ export default function Navbar() {
       </Link>
       <div className="md:visible md:flex hidden">
         <Link
-          href={"/"}
+          href={"/apartments"}
           className="ml-20 text-[#5B2205] text-xl hover:text-[#5b220596] mt-1 hover:mt-0"
         >
           Apartments
         </Link>
         <Link
-          href={"/"}
+          href={"/about"}
           className="ml-5 text-[#5B2205] text-xl hover:text-[#5b220596] mt-1 hover:mt-0"
         >
           About Us
         </Link>
         <Link
-          href={"/"}
+          href={"/contact"}
           className="ml-5 text-[#5B2205] text-xl hover:text-[#5b220596] mt-1 hover:mt-0"
         >
           Contact
         </Link>
         <Link
-          href={"/"}
+          href={"/login"}
           className="ml-5 text-[#5B2205] text-xl hover:text-[#5b220596] mt-1 hover:mt-0"
         >
           Login
