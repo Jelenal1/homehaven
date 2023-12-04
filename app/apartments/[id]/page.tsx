@@ -21,7 +21,7 @@ export default function page({ params }: { params: { id: string } }) {
         <LiaCoinsSolid />
         <h2 className="ml-1">{object.price}</h2>
       </div>
-      <p className="break-words">{object.shortDescription}</p>
+      <p className="break-words w-[1000px]">{object.description}</p>
     </div>
   );
 }

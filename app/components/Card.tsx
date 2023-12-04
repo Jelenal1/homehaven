@@ -15,9 +15,9 @@ export default function Card({
   };
 }) {
   return (
-    <div className="w-full">
+    <div className="w-full h-full">
       <Link href={`/apartments/${object.id}`}>
-        <div className="text-[#5B2205] border border-black mx-auto min-h-fit text-center min-w-[200px] max-w-[300px]">
+        <div className="text-[#5B2205] border border-black mx-auto text-center h-full min-w-[200px] max-w-[300px]">
           {object.images ? (
             <Image
               src={object.images[0]}
