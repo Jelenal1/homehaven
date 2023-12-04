@@ -9,6 +9,7 @@ export default function Card({
     id: number;
     title: string;
     description: string;
+    shortDescription: string;
     price: number | null | undefined;
     images: string[] | null | undefined;
   };
@@ -33,7 +34,7 @@ export default function Card({
             <LiaCoinsSolid className="text-[#5B2205]" />
             <h2 className="ml-1">{object.price}</h2>
           </div>
-          <p className="mr-auto break-words">{object.description}</p>
+          <p className="mr-auto break-words">{object.shortDescription}</p>
         </div>
       </Link>
     </div>

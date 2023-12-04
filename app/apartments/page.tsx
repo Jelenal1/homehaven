@@ -5,7 +5,9 @@ export const mockingData = [
   {
     id: 1,
     title: "Apartment 1",
-    description: "This is an apartment",
+    description:
+      "It has a kitchen, bathroom, and a bed. Fiew over san francisco",
+    shortDescription: "One of our most beautiful modern apartments",
     price: 100,
     images: ["/apartment_clean_light1.png", "/apartment_clean_light2.png"],
   },
@@ -13,6 +15,7 @@ export const mockingData = [
     id: 2,
     title: "Apartment 2",
     description: "This is an apartment",
+    shortDescription: "This apartmet has a nice traditional touch",
     price: 100,
     images: ["/apartment_rough_light1.png", "/apartment_rough_light2.png"],
   },
