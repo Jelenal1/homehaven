@@ -6,7 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 export default function CarouselImages({ images }: { images: string[] }) {
   return (
     <>
-      <Carousel showArrows={true} className="w-[500px]">
+      <Carousel showArrows={true} className="max-w-[500px] mx-auto">
         {images.map((url, index) => (
           <div key={index}>
             <Image
