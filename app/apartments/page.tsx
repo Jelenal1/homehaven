@@ -47,7 +47,7 @@ export default function page() {
     <>
       <div className="flex flex-col min-h-screen items-center">
         <h1 className="text-3xl my-5 text-[#5B2205]">Apartments</h1>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-2 mx-9">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-2 mx-9">
           {mockingData.map((object) => (
             <div key={object.id} className="flex flex-col">
               <Card object={object} />
