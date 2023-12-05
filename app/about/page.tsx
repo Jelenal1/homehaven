@@ -4,14 +4,14 @@ export default function page() {
     <div className="flex min-h-screen flex-col items-center mx-9 gap-10">
       <h1 className="text-3xl my-5 text-[#5B2205]">About Us</h1>
       <CarouselImages images={["/homhaven_team1.png", "/homhaven_team2.png"]} />
-      <p className="text-justify max-w-[1000px] mx-auto my-2">
+      <p className="text-justify max-w-[1000px] mx-auto my-1">
         Welcome to HomeHaven, the place where your search for the perfect home
         ends. Founded in 2023, HomeHaven has quickly established itself as a
         beacon of trust and excellence in the real estate market. Our mission is
         simple yet profound: to help individuals and families find not just a
         house, but a place they can truly call home.
       </p>
-      <p className="text-justify max-w-[1000px] mx-auto my-2">
+      <p className="text-justify max-w-[1000px] mx-auto my-1">
         At HomeHaven, we understand that finding the right apartment is about
         more than just the walls and the windows — it's about the feelings of
         comfort, security, and belonging. Our team, comprised of experienced
@@ -19,7 +19,7 @@ export default function page() {
         staff, works tirelessly to ensure every property we list is not just a
         living space but a haven for its residents.
       </p>
-      <p className="text-justify max-w-[1000px] mx-auto my-2">
+      <p className="text-justify max-w-[1000px] mx-auto my-1">
         Our journey began with a small team of visionary entrepreneurs who
         believed in the transformative power of a well-chosen home. Today,
         HomeHaven stands as a testament to their vision, having helped thousands
@@ -28,7 +28,7 @@ export default function page() {
         personalized experiences and a handpicked selection of properties that
         cater to diverse needs and preferences.
       </p>
-      <p className="text-justify max-w-[1000px] mx-auto my-2">
+      <p className="text-justify max-w-[1000px] mx-auto mt-1 mb-4">
         At the heart of HomeHaven is a commitment to integrity, transparency,
         and customer satisfaction. We're more than just a business; we're a
         community, a part of the neighborhoods we serve. We celebrate the
