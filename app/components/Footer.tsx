@@ -4,7 +4,7 @@ export default function Footer() {
       <p className="mt-2">
         © {new Date().getFullYear()} HomeHaven. All rights reserved.
         <br />
-        This is a school project
+        This is a school project All Data is ai generated
       </p>
     </footer>
   );
