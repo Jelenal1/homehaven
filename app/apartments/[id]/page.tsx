@@ -1,5 +1,4 @@
 import { mockingData } from "@/app/apartments/page";
-import Image from "next/image";
 import { LiaCoinsSolid } from "react-icons/lia";
 import CarouselImages from "../../_components/CarouselImages";
 
