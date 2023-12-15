@@ -5,7 +5,7 @@ import CarouselImages from "../../components/CarouselImages";
 
 export default function page({ params }: { params: { id: string } }) {
   const object = mockingData.find(
-    (object) => object.id === parseInt(params.id)
+    (object) => object.id === parseInt(params.id),
   );
 
   if (!object) {
@@ -13,8 +13,8 @@ export default function page({ params }: { params: { id: string } }) {
   }
 
   return (
-    <div className="flex flex-col min-h-screen text-[#5B2205] mx-9">
-      <h1 className="text-3xl my-5 mx-auto">{object.title}</h1>
+    <div className="mx-9 flex min-h-screen flex-col text-[#5B2205]">
+      <h1 className="mx-auto my-5 text-3xl">{object.title}</h1>
       <CarouselImages images={object.images} />
       <div className="flex items-center justify-center">
         <span>CHF</span>
@@ -22,7 +22,7 @@ export default function page({ params }: { params: { id: string } }) {
         <h2 className="ml-1">{object.price}</h2>
       </div>
       {object.description.split(`\n`).map((sentence, index) => (
-        <p className="text-justify max-w-[1000px] mx-auto my-2" key={index}>
+        <p className="mx-auto my-2 max-w-[1000px] text-justify" key={index}>
           {sentence}
         </p>
       ))}
