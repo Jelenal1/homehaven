@@ -1,7 +1,7 @@
 import { mockingData } from "@/app/apartments/page";
 import Image from "next/image";
 import { LiaCoinsSolid } from "react-icons/lia";
-import CarouselImages from "../../components/CarouselImages";
+import CarouselImages from "../../_components/CarouselImages";
 
 export default function page({ params }: { params: { id: string } }) {
   const object = mockingData.find(

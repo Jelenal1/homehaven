@@ -1,4 +1,4 @@
-import CarouselImages from "../components/CarouselImages";
+import CarouselImages from "../_components/CarouselImages";
 export default function page() {
   return (
     <div className="mx-9 flex min-h-screen flex-col items-center gap-10">
