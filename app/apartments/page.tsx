@@ -44,9 +44,9 @@ export const mockingData = [
 export default function page() {
   return (
     <>
-      <div className="flex flex-col mb-20 items-center">
-        <h1 className="text-3xl my-5 text-[#5B2205]">Apartments</h1>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-2 mx-9">
+      <div className="flex flex-col items-center">
+        <h1 className="my-5 text-3xl text-[#5B2205]">Apartments</h1>
+        <div className="mx-9 grid gap-2 md:grid-cols-2 lg:grid-cols-3">
           {mockingData.map((object) => (
             <div key={object.id} className="flex flex-col">
               <Card object={object} />
