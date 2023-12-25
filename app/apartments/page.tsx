@@ -9,7 +9,6 @@ export const mockingData = [
     shortDescription:
       "Experience luxury living with modern amenities and a stunning view at the heart of Harborview.",
     location: "Skyline Residences, Downtown Harborview",
-    price: 500,
     images: ["/apartment_clean_light1.png", "/apartment_clean_light2.png"],
   },
   {
@@ -20,7 +19,6 @@ export const mockingData = [
     shortDescription:
       "Discover the perfect fusion of tradition and comfort in the heart of Harborview's most sought-after location.",
     location: "Skyline Residences, Downtown Harborview",
-    price: 1000,
     images: ["/apartment_rough_light1.png", "/apartment_rough_light2.png"],
   },
   {
@@ -31,7 +29,6 @@ export const mockingData = [
     shortDescription:
       "An epitome of urban sophistication, this two-bedroom suite in Skyline Residences offers unparalleled luxury and stunning city views.",
     location: "Skyline Residences, Downtown Harborview",
-    price: 2000,
     images: [
       "/apartment_elegant1.png",
       "/apartment_elegant2.png",

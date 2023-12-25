@@ -11,7 +11,6 @@ export default async function Card({
     title: string;
     description: string;
     shortDescription: string;
-    price: number | null | undefined;
     images: string[] | null | undefined;
   };
 }) {
