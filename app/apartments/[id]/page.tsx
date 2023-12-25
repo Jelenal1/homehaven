@@ -24,7 +24,10 @@ export default async function page({ params }: { params: { id: string } }) {
         <h2 className="ml-1">{price}</h2>
       </div>
       {object.description.split(`\n`).map((sentence, index) => (
-        <p className="mx-auto my-2 max-w-[1000px] text-justify" key={index}>
+        <p
+          className="mx-auto my-2 w-full max-w-[1000px] text-justify"
+          key={index}
+        >
           {sentence}
         </p>
       ))}
