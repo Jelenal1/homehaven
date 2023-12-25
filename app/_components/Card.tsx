@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { LiaCoinsSolid } from "react-icons/lia";
+import { getPrice } from "./ServerFunctions";
 
-export default function Card({
+export default async function Card({
   object,
 }: {
   object: {
@@ -14,10 +15,11 @@ export default function Card({
     images: string[] | null | undefined;
   };
 }) {
+  const price = await getPrice(object.title);
   return (
-    <div className="w-full h-full">
+    <div className="h-full w-full">
       <Link href={`/apartments/${object.id}`}>
-        <div className="text-[#5B2205] border border-black mx-auto text-center h-full min-w-[200px] max-w-[300px]">
+        <div className="mx-auto h-full min-w-[200px] max-w-[300px] border border-black text-center text-[#5B2205]">
           {object.images ? (
             <Image
               src={object.images[0]}
@@ -32,7 +34,7 @@ export default function Card({
           <div className="flex items-center justify-center">
             <span>CHF</span>
             <LiaCoinsSolid className="text-[#5B2205]" />
-            <h2 className="ml-1">{object.price}</h2>
+            <h2 className="ml-1">{price}</h2>
           </div>
           <p className="mr-auto break-words">{object.shortDescription}</p>
         </div>
