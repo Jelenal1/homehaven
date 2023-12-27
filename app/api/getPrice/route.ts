@@ -12,5 +12,6 @@ export async function GET(request: NextRequest) {
   const price = await stripe.prices.retrieve(product.default_price as string);
   return NextResponse.json({
     price_in_cents: price.unit_amount,
+    price_id: price.id,
   });
 }
