@@ -1,4 +1,4 @@
-import { mockingData } from "@/app/apartments/page";
+import { mockingData } from "@/app/page";
 import { LiaCoinsSolid } from "react-icons/lia";
 import CarouselImages from "../../_components/CarouselImages";
 import { getPrice, getPriceId } from "@/app/_components/ServerFunctions";
