@@ -49,7 +49,7 @@ export default function page() {
           width={300}
           height={300}
         />
-        <h2 className="my-5 text-3xl text-[#5B2205]">Apartments</h2>
+        <h2 className="mb-5 text-3xl text-[#5B2205]">Apartments</h2>
         <div className="mx-9 grid max-w-[900px] gap-2 md:grid-cols-2 lg:grid-cols-3">
           {mockingData.map((object) => (
             <div key={object.id} className="flex flex-col">
