@@ -2,6 +2,10 @@ import { mockingData } from "@/app/apartments/page";
 import { LiaCoinsSolid } from "react-icons/lia";
 import CarouselImages from "../../_components/CarouselImages";
 
+async function getProduct() {
+ 
+}
+
 export default function page({ params }: { params: { id: string } }) {
   const object = mockingData.find(
     (object) => object.id === parseInt(params.id),
@@ -10,6 +14,8 @@ export default function page({ params }: { params: { id: string } }) {
   if (!object) {
     return <div>Apartment not found</div>;
   }
+
+  const productPrice = getProduct();
 
   return (
     <div className="mx-9 flex min-h-screen flex-col text-[#5B2205]">
