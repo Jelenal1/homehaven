@@ -1,8 +1,8 @@
-import { mockingData } from "@/app/page";
 import { LiaCoinsSolid } from "react-icons/lia";
 import CarouselImages from "../../_components/CarouselImages";
 import { getPrice, getPriceId } from "@/app/_components/ServerFunctions";
 import CheckoutButton from "../../_components/CheckoutButton";
+import { mockingData } from "@/app/_components/Data";
 
 export default async function page({ params }: { params: { id: string } }) {
   const object = mockingData.find(
