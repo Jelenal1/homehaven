@@ -1,6 +1,6 @@
 export const getPrice = async (name: string) => {
   const priceResponse = await fetch(
-    `https://homehaven-ecc604h9r-jelenal1.vercel.app/api/getPrice?name=${name}`,
+    `homehaven-liard.vercel.app/api/getPrice?name=${name}`,
   );
 
   const price_data = await priceResponse.json();
@@ -10,7 +10,7 @@ export const getPrice = async (name: string) => {
 
 export const getPriceId = async (name: string) => {
   const priceResponse = await fetch(
-    `https://homehaven-ecc604h9r-jelenal1.vercel.app/api/getPrice?name=${name}`,
+    `homehaven-liard.vercel.app/api/getPrice?name=${name}`,
   );
   const price_data = await priceResponse.json();
   return price_data.price_id;
