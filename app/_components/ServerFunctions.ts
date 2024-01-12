@@ -1,8 +1,5 @@
 export const getPrice = async (name: string) => {
-  const baseUrl = "/api/getPrice";
-  const query = encodeURIComponent(name);
-  const url = `${baseUrl}?name=${query}`;
-  const priceResponse = await fetch(url);
+  const priceResponse = await fetch(`/api/getPrice?name=${name}`);
 
   const price_data = await priceResponse.json();
   const price = price_data.price_in_cents / 100;
@@ -10,10 +7,7 @@ export const getPrice = async (name: string) => {
 };
 
 export const getPriceId = async (name: string) => {
-  const baseUrl = "/api/getPrice";
-  const query = encodeURIComponent(name);
-  const url = `${baseUrl}?name=${query}`;
-  const priceResponse = await fetch(url);
+  const priceResponse = await fetch(`/api/getPrice?name=${name}`);
   const price_data = await priceResponse.json();
   return price_data.price_id;
 };
