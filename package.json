@@ -12,7 +12,9 @@
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^4.12.0"
+    "react-icons": "^4.12.0",
+    "react-responsive-carousel": "^3.2.23",
+    "stripe": "^14.10.0"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -20,6 +22,8 @@
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
     "postcss": "^8",
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.9",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }

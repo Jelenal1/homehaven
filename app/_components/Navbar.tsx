@@ -9,7 +9,7 @@ import { FaBars } from "react-icons/fa";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
-    <div className="flex items-center bg-[#EFE6D4] border-b-2 border-[#5B2205] mx-9">
+    <div className="mx-9 flex items-center border-b-2 border-[#5B2205] bg-[#EFE6D4]">
       <Link href="/">
         <Image
           src="/HomeHaven.png"
@@ -20,35 +20,29 @@ export default function Navbar() {
           className="aspect-square min-w-fit"
         ></Image>
       </Link>
-      <div className="md:visible md:flex hidden">
+      <div className="hidden md:visible md:flex">
         <Link
-          href={"/"}
-          className="ml-20 text-[#5B2205] text-xl hover:text-[#5b220596] mt-1 hover:mt-0"
-        >
-          Apartments
-        </Link>
-        <Link
-          href={"/"}
-          className="ml-5 text-[#5B2205] text-xl hover:text-[#5b220596] mt-1 hover:mt-0"
+          href={"/about"}
+          className="ml-5 mt-1 text-xl text-[#5B2205] hover:mt-0 hover:text-[#5b220596]"
         >
           About Us
         </Link>
         <Link
-          href={"/"}
-          className="ml-5 text-[#5B2205] text-xl hover:text-[#5b220596] mt-1 hover:mt-0"
+          href={"/contact"}
+          className="ml-5 mt-1 text-xl text-[#5B2205] hover:mt-0 hover:text-[#5b220596]"
         >
           Contact
         </Link>
         <Link
-          href={"/"}
-          className="ml-5 text-[#5B2205] text-xl hover:text-[#5b220596] mt-1 hover:mt-0"
+          href={"/login"}
+          className="ml-5 mt-1 text-xl text-[#5B2205] hover:mt-0 hover:text-[#5b220596]"
         >
           Login
         </Link>
       </div>
       <button
         onClick={() => setOpen(true)}
-        className="md:hidden ml-auto mr-2 mt-2 text-2xl text-[#5B2205]"
+        className="ml-auto mr-2 mt-2 text-2xl text-[#5B2205] md:hidden"
       >
         <FaBars />
       </button>
