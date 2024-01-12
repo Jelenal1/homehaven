@@ -1,5 +1,5 @@
 export const getPrice = async (name: string) => {
-  const baseUrl = "https://homehaven-liard.vercel.app/api/getPrice";
+  const baseUrl = "/api/getPrice";
   const query = encodeURIComponent(name);
   const url = `${baseUrl}?name=${query}`;
   const priceResponse = await fetch(url);
@@ -10,7 +10,7 @@ export const getPrice = async (name: string) => {
 };
 
 export const getPriceId = async (name: string) => {
-  const baseUrl = "https://homehaven-liard.vercel.app/api/getPrice";
+  const baseUrl = "/api/getPrice";
   const query = encodeURIComponent(name);
   const url = `${baseUrl}?name=${query}`;
   const priceResponse = await fetch(url);
