@@ -1,11 +1,7 @@
-const baseUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : "http://localhost:3000";
-
 export const getPrice = async (name: string) => {
   const parsedName = encodeURIComponent(name);
   const priceResponse = await fetch(
-    `${baseUrl}/api/getPrice?name=${parsedName}`,
+    `https://homehaven-backend.vercel.app/api/getPrice?name=${parsedName}`,
   );
 
   const price_data = await priceResponse.json();
@@ -16,7 +12,7 @@ export const getPrice = async (name: string) => {
 export const getPriceId = async (name: string) => {
   const parsedName = encodeURIComponent(name);
   const priceResponse = await fetch(
-    `${baseUrl}/api/getPrice?name=${parsedName}`,
+    `https://homehaven-backend.vercel.app/api/getPrice?name=${parsedName}`,
   );
   const price_data = await priceResponse.json();
   return price_data.price_id;
