@@ -7,7 +7,7 @@ export default function page() {
     <>
       <div className="flex flex-col items-center">
         <Image
-          src="/HomeHaven.png"
+          src="/homehavenlogo.png"
           alt="HomeHaven Logo"
           width={300}
           height={300}

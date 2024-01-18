@@ -12,7 +12,7 @@ export default function Navbar() {
     <div className="mx-9 flex items-center border-b-2 border-[#5B2205] bg-[#EFE6D4]">
       <Link href="/">
         <Image
-          src="/HomeHaven.png"
+          src="/homehavenlogo.png"
           alt="HomeHaven Logo"
           width={120}
           height={1}
