@@ -20,6 +20,7 @@ export default function CheckoutButton({ priceId }: { priceId: string }) {
       },
     );
     const data = await response.json();
+    console.log(data);
     window.location.assign(data);
   };
   return (
