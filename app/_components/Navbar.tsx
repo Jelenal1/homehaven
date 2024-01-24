@@ -22,6 +22,12 @@ export default function Navbar() {
       </Link>
       <div className="hidden md:visible md:flex">
         <Link
+          href={"/"}
+          className="ml-5 mt-1 text-xl text-[#5B2205] hover:mt-0 hover:text-[#5b220596]"
+        >
+          Apartments
+        </Link>
+        <Link
           href={"/about"}
           className="ml-5 mt-1 text-xl text-[#5B2205] hover:mt-0 hover:text-[#5b220596]"
         >
@@ -32,12 +38,6 @@ export default function Navbar() {
           className="ml-5 mt-1 text-xl text-[#5B2205] hover:mt-0 hover:text-[#5b220596]"
         >
           Contact
-        </Link>
-        <Link
-          href={"/login"}
-          className="ml-5 mt-1 text-xl text-[#5B2205] hover:mt-0 hover:text-[#5b220596]"
-        >
-          Login
         </Link>
       </div>
       <button
