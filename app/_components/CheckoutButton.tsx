@@ -7,7 +7,7 @@ export default function CheckoutButton({ priceId }: { priceId: string }) {
 
   const checkOut = async () => {
     const response = await fetch(
-      "https://homehaven-backend-express.onrender.com/checkout",
+      "https://homehaven-backend-express.onrender.com:10000/checkout",
       {
         method: "POST",
         headers: {
