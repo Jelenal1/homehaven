@@ -21,7 +21,7 @@ export default function CheckoutButton({ priceId }: { priceId: string }) {
     );
     const data = await response.json();
     console.log(data);
-    window.location.assign(data);
+    window.location.assign(data.url);
   };
   return (
     <div className="mt-2 flex flex-col">
