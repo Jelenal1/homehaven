@@ -7,7 +7,7 @@ export default function CheckoutButton({ priceId }: { priceId: string }) {
 
   const checkOut = async () => {
     const response = await fetch(
-      "https://homehaven-backend.vercel.app/api/checkout",
+      "https://homehaven-backend-express.onrender.com/checkout",
       {
         method: "POST",
         headers: {
