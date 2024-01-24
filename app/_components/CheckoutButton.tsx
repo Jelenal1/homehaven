@@ -16,12 +16,14 @@ export default function CheckoutButton({ priceId }: { priceId: string }) {
         body: JSON.stringify({
           priceId: priceId,
           quantity: quantity,
+          succes_url: "http://localhost:3000/",
+          cancel_url: "http://localhost:3000/",
         }),
       },
     );
     const data = await response.json();
     console.log(data);
-    window.location.assign(data);
+    window.location.assign(data.url);
   };
   return (
     <div className="mt-2 flex flex-col">
