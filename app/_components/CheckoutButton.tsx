@@ -16,6 +16,8 @@ export default function CheckoutButton({ priceId }: { priceId: string }) {
         body: JSON.stringify({
           priceId: priceId,
           quantity: quantity,
+          succes_url: window.location.href,
+          cancel_url: window.location.href,
         }),
       },
     );
