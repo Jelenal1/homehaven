@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "https://homehaven-backend.vercel.app/api/checkout",
+      "source": "https://homehaven-backend-express.onrender.com/*",
       "headers": [
         { "key": "Access-Control-Allow-Origin", "value": "*" },
         {
