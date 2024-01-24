@@ -2,7 +2,7 @@ export const getPrice = async (name: string) => {
   const parsedName = encodeURIComponent(name);
   try {
     const priceResponse = await fetch(
-      `https://homehaven-backend-express.onrender.com:10000/getPrice?name=${parsedName}`,
+      `https://homehaven-backend-express.onrender.com/getPrice?name=${parsedName}`,
     );
 
     const price_data = await priceResponse.json();
@@ -17,7 +17,7 @@ export const getPriceId = async (name: string) => {
   const parsedName = encodeURIComponent(name);
   try {
     const priceResponse = await fetch(
-      `https://homehaven-backend-express.onrender.com:10000/getPrice?name=${parsedName}`,
+      `https://homehaven-backend-express.onrender.com/getPrice?name=${parsedName}`,
     );
     const price_data = await priceResponse.json();
     return price_data.price_id;
