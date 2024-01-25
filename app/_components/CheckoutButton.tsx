@@ -16,8 +16,8 @@ export default function CheckoutButton({ priceId }: { priceId: string }) {
         body: JSON.stringify({
           priceId: priceId,
           quantity: quantity,
-          succes_url: "http://localhost:3000/",
-          cancel_url: "http://localhost:3000/",
+          succes_url: "https://home-haven-frontend.onrender.com",
+          cancel_url: "https://home-haven-frontend.onrender.com",
         }),
       },
     );
